@@ -1,0 +1,17 @@
+.section { 
+    .inner { 
+        .introduction { 
+            .btn-view  { 
+                padding-bottom: .5rem;
+                display: inline-flex;
+                border-bottom: 1px solid var(--blue00);
+                
+            }
+        }
+        .img-wrap { 
+            img { 
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아시아오토</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="row1">
+            <ul class="top-nav">
+                <li><a href="">부품구매</a></li>
+                <li><a href="">패밀리사이트1</a></li>
+                <li><a href="">패밀리사이트1</a></li>
+            </ul>
+            <ul class="top-select">
+                <li>
+                    <select name="" id="">
+                        <option value="">아제르바이잔</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="" id="">
+                        <option value="">한국어</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="" id="">
+                        <option value="">KRW</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="row2">
+            <h1 class="logo">
+                <a href="">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </h1>
+            <div class="search">
+                <div class="select-wrap">
+                    <select name="" id="">
+                        <option value="">검색 구분</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="차량 모델, 브랜드, 품목명 입력">
+                <button type="button">검색하기</button>
+            </div>
+            <ul class="utility">
+                <li><button class="btn-sale" type="button">차량 판매하기</button></li>
+                <li><button class="btn-icon" type="button"><img src="images/ico_cart.svg" alt=""></button></li>
+                <li><button class="btn-icon" type="button"><img src="images/ico_bell.svg" alt=""></button></li>
+                <li><button class="btn-icon" type="button"><img src="images/ico_member.svg" alt=""></button></li>
+                <li><button class="btn-icon" type="button"><img src="images/ico_board.svg" alt=""></button></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="grid-type2 pt38">
+            <div class="pt46 pl20 relative">
+                <div class="text fz14 fw700 black00">구동방식</div>
+                <ul class="list-type3 align pt12">
+                    <li><button type="button">자동차</button></li>
+                    <li><button type="button">SUV</button></li>
+                    <li><button class="active" type="button">특장차</button></li>
+                    <li><button type="button">버스</button></li>
+                    <li><button type="button">영업용</button></li>
+                    <li><button type="button">중장비</button></li>
+                    <li><button type="button">부품</button></li>
+                    <li><button class="active" type="button">폐차/사고차</button></li>
+                </ul>
+                <div class="text fz14 fw700 black00 pt20">구동방식</div>
+                <ul class="list-type3 align pt12">
+                    <li><button type="button">현대</button></li>
+                    <li><button type="button">르노</button></li>
+                    <li><button type="button">기아</button></li>
+                    <li><button type="button">옵션정보</button></li>
+                    <li><button type="button">대우</button></li>
+                    <li><button type="button">쌍용</button></li>
+                    <li><button type="button">벤츠</button></li>
+                    <li><button type="button">BMW</button></li>
+                    <li><button type="button">아우디</button></li>
+                    <li><button type="button">폭스바겐</button></li>
+                    <li><button type="button">볼보</button></li>
+                    <li><button type="button">랜드로바</button></li>
+                    <li><button type="button">BMW미니</button></li>
+                    <li><button type="button">닛싼</button></li>
+                    <li><button type="button">넥서스</button></li>
+                    <li><button type="button">르노</button></li>
+                    <li><button type="button">링컨</button></li>
+                </ul>
+                <label class="text fz14 fw700 black00 pt20" for="txt1">최소 가격</label>
+                <input class="input-type1 mt12" id="txt1" type="number" placeholder="입력해주세요">
+                <label class="text fz14 fw700 black00 pt20" for="txt2">최대 가격</label>
+                <input class="input-type1 mt12" id="txt2" type="number" placeholder="입력해주세요">
+                <label class="text fz14 fw700 black00 pt20"  for="txt3">최소 연식</label>
+                <input class="input-type1 mt12" type="number" id="txt3" placeholder="입력해주세요">
+                <label class="text fz14 fw700 black00 pt20" for="txt4">최대 연식</label>
+                <input class="input-type1 mt12" type="number" id="txt4" placeholder="입력해주세요">
+                <label class="text fz14 fw700 black00 pt20" for="txt5">최대 주행거리</label>
+                <input class="input-type1 mt12" type="number" id="txt5" placeholder="입력해주세요">
+                <div class="btn-type1">
+                    <button class="btn-reset" type="button">초기화</button>
+                    <button class="btn-filtering" type="button">필터링 상품보기</button>
+                </div>
+            </div>
+            <div class="pr20">
+                <div class="text fz14 fw700 black00 pb20">‘현대 쏘나타’로 검색한 결과입니다.</div>
+                <div class="align both vm px16 py8 borderc8 h48">
+                    <div class="text fz14 fw400 gray6a">
+                        <span class="text fw700">5,407개</span> 검색 결과가 있습니다.
+                    </div>
+                    <div class="align">
+                        <div class="check-type1">
+                            <label for="chk1">품질인증차량</label>
+                            <input class="checkbox ml6" type="checkbox" id="chk1">
+                            <label for="chk2" class="pl16">말소완료차량</label>
+                            <input class="checkbox ml6 mr22" type="checkbox" id="chk2">
+                        </div>
+                        <div class="select-type1">
+                            <select name="" id="">
+                                <option value="">추천순</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <ul class="list-type1 pt18">
+                    <li>
+                        <img src="images/@img_car.png" alt="">
+                        <div class="info">
+                            <div>
+                                <div class="text fz12 black00">2022 한국</div>
+                                <div class="text fz18 fw700 black00 ellipsis02">
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                </div>
+                                <ul class="label-wrap">
+                                    <li>오토</li>
+                                    <li>가솔린</li>
+                                    <li>F2WD</li>
+                                </ul>
+                            </div>
+                            <div class="text fz18 fw700 black00">
+                                3,400,000<span class="text fz12 fw400">원</span>
+                            </div>
+                        </div>
+                        <div class="label-certification">
+                            <div class="label orange ico1">품질인증차량</div>
+                            <div class="label blue ico2">말소완료차량</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/@img_car.png" alt="">
+                        <div class="info">
+                            <div>
+                                <div class="text fz12 black00">2022 한국</div>
+                                <div class="text fz18 fw700 black00 ellipsis02">
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                </div>
+                                <ul class="label-wrap">
+                                    <li>오토</li>
+                                    <li>가솔린</li>
+                                    <li>F2WD</li>
+                                </ul>
+                            </div>
+                            <div class="text fz18 fw700 black00">
+                                3,400,000<span class="text fz12 fw400">원</span>
+                            </div>
+                        </div>
+                        <div class="label-certification">
+                            <div class="label orange ico1">품질인증차량</div>
+                            <div class="label blue ico2">말소완료차량</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/@img_car.png" alt="">
+                        <div class="info">
+                            <div>
+                                <div class="text fz12 black00">2022 한국</div>
+                                <div class="text fz18 fw700 black00 ellipsis02">
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                </div>
+                                <ul class="label-wrap">
+                                    <li>오토</li>
+                                    <li>가솔린</li>
+                                    <li>F2WD</li>
+                                </ul>
+                            </div>
+                            <div class="text fz18 fw700 black00">
+                                3,400,000<span class="text fz12 fw400">원</span>
+                            </div>
+                        </div>
+                        <div class="label-certification">
+                            <div class="label orange ico1">품질인증차량</div>
+                            <div class="label blue ico2">말소완료차량</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/@img_car.png" alt="">
+                        <div class="info">
+                            <div>
+                                <div class="text fz12 black00">2022 한국</div>
+                                <div class="text fz18 fw700 black00 ellipsis02">
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                </div>
+                                <ul class="label-wrap">
+                                    <li>오토</li>
+                                    <li>가솔린</li>
+                                    <li>F2WD</li>
+                                </ul>
+                            </div>
+                            <div class="text fz18 fw700 black00">
+                                3,400,000<span class="text fz12 fw400">원</span>
+                            </div>
+                        </div>
+                        <div class="label-certification">
+                            <div class="label orange ico1">품질인증차량</div>
+                            <div class="label blue ico2">말소완료차량</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/@img_car.png" alt="">
+                        <div class="info">
+                            <div>
+                                <div class="text fz12 black00">2022 한국</div>
+                                <div class="text fz18 fw700 black00 ellipsis02">
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                </div>
+                                <ul class="label-wrap">
+                                    <li>오토</li>
+                                    <li>가솔린</li>
+                                    <li>F2WD</li>
+                                </ul>
+                            </div>
+                            <div class="text fz18 fw700 black00">
+                                3,400,000<span class="text fz12 fw400">원</span>
+                            </div>
+                        </div>
+                        <div class="label-certification">
+                            <div class="label orange ico1">품질인증차량</div>
+                            <div class="label blue ico2">말소완료차량</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-type1 pt48">
+                    <li>
+                        <img src="images/@img_car.png" alt="">
+                        <div class="info">
+                            <div>
+                                <div class="text fz12 black00">2022 한국</div>
+                                <div class="text fz18 fw700 black00 ellipsis02">
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                </div>
+                                <ul class="label-wrap">
+                                    <li>오토</li>
+                                    <li>가솔린</li>
+                                    <li>F2WD</li>
+                                </ul>
+                            </div>
+                            <div class="text fz18 fw700 black00">
+                                3,400,000<span class="text fz12 fw400">원</span>
+                            </div>
+                        </div>
+                        <div class="label-certification">
+                            <div class="label orange ico1">품질인증차량</div>
+                            <div class="label blue ico2">말소완료차량</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/@img_car.png" alt="">
+                        <div class="info">
+                            <div>
+                                <div class="text fz12 black00">2022 한국</div>
+                                <div class="text fz18 fw700 black00 ellipsis02">
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                </div>
+                                <ul class="label-wrap">
+                                    <li>오토</li>
+                                    <li>가솔린</li>
+                                    <li>F2WD</li>
+                                </ul>
+                            </div>
+                            <div class="text fz18 fw700 black00">
+                                3,400,000<span class="text fz12 fw400">원</span>
+                            </div>
+                        </div>
+                        <div class="label-certification">
+                            <div class="label orange ico1">품질인증차량</div>
+                            <div class="label blue ico2">말소완료차량</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/@img_car.png" alt="">
+                        <div class="info">
+                            <div>
+                                <div class="text fz12 black00">2022 한국</div>
+                                <div class="text fz18 fw700 black00 ellipsis02">
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                </div>
+                                <ul class="label-wrap">
+                                    <li>오토</li>
+                                    <li>가솔린</li>
+                                    <li>F2WD</li>
+                                </ul>
+                            </div>
+                            <div class="text fz18 fw700 black00">
+                                3,400,000<span class="text fz12 fw400">원</span>
+                            </div>
+                        </div>
+                        <div class="label-certification">
+                            <div class="label orange ico1">품질인증차량</div>
+                            <div class="label blue ico2">말소완료차량</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/@img_car.png" alt="">
+                        <div class="info">
+                            <div>
+                                <div class="text fz12 black00">2022 한국</div>
+                                <div class="text fz18 fw700 black00 ellipsis02">
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                </div>
+                                <ul class="label-wrap">
+                                    <li>오토</li>
+                                    <li>가솔린</li>
+                                    <li>F2WD</li>
+                                </ul>
+                            </div>
+                            <div class="text fz18 fw700 black00">
+                                3,400,000<span class="text fz12 fw400">원</span>
+                            </div>
+                        </div>
+                        <div class="label-certification">
+                            <div class="label orange ico1">품질인증차량</div>
+                            <div class="label blue ico2">말소완료차량</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/@img_car.png" alt="">
+                        <div class="info">
+                            <div>
+                                <div class="text fz12 black00">2022 한국</div>
+                                <div class="text fz18 fw700 black00 ellipsis02">
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                    산타페 CM MLX NO A DD44512121 산타페 CM MLX NO A DD44512121
+                                </div>
+                                <ul class="label-wrap">
+                                    <li>오토</li>
+                                    <li>가솔린</li>
+                                    <li>F2WD</li>
+                                </ul>
+                            </div>
+                            <div class="text fz18 fw700 black00">
+                                3,400,000<span class="text fz12 fw400">원</span>
+                            </div>
+                        </div>
+                        <div class="label-certification">
+                            <div class="label orange ico1">품질인증차량</div>
+                            <div class="label blue ico2">말소완료차량</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

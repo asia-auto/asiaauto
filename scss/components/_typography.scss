@@ -1,0 +1,134 @@
+.text {
+    &.fz12 {
+        font-size: 1.2rem;
+    }
+    &.fz14 {
+        font-size: 1.4rem;
+    }
+    &.fz16 {
+        font-size: 1.6rem;
+    }
+    &.fz18 {
+        font-size: 1.8rem;
+    }
+    &.fz24 {
+        font-size: 2.4rem;
+    }
+    &.fz30 {
+        font-size: 3rem;
+    }
+    &.fz36 {
+        font-size: 3.6rem;
+    }
+    &.fz52 {
+        font-size: 5.2rem;
+    }
+    &.fw400 {
+        font-weight: 400;
+    }
+    &.fw500 {
+        font-weight: 500;
+    }
+    &.fw700 {
+        font-weight: 700;
+    }
+    &.fw800 {
+        font-weight: 800;
+    }
+    &.lh160 {
+        line-height: 160%;
+    }
+    &.lh180 {
+        line-height: 180%;
+    }
+    &.black00 {
+        color: var(--black00);
+    }
+    &.black2d {
+        color: var(--black2d);
+    }
+    &.black24 {
+        color: var(--black24);
+    }
+    &.black2d {
+        color: var(--black2d);
+    }
+    &.orangeff { 
+        color: var(--orangeff);
+    }
+    &.green32 { 
+        color: var(--green32);
+    }
+    &.navy13 {
+        color: var(--navy13);
+    }
+    &.blue00 { 
+        color: var(--blue00);
+    }
+    &.graya7 { 
+        color: var(--graya7);
+    }
+    &.gray6a { 
+        color: var(--gray6a);
+    }
+    &.gray69 { 
+        color: var(--gray69);
+    }
+    &.white {
+        color: var(--white);
+        
+    }
+    &.underline {
+        text-decoration: underline;
+    }
+    &.spacing1 { 
+        letter-spacing: 0.72rem;
+    }
+    &.ico1 { 
+        display: flex;
+        gap: .4rem;
+        &::after { 
+            @include content;
+            @include ico-19;
+            background: url(#{$img-path}ico_check_green.svg);
+        }
+    }
+    &.ico2 { 
+        display: flex;
+        gap: .4rem;
+        &::after { 
+            @include content;
+            @include ico-19;
+            background: url(#{$img-path}ico_circle_gray.svg);
+        }
+    }
+}
+label {
+    display: inline-block;
+}
+.ellipsis01 {
+    overflow: hidden;          
+    white-space: nowrap;       
+    text-overflow: ellipsis;   
+}
+.ellipsis02 {
+    display: -webkit-box;       
+    -webkit-line-clamp: 2;      
+    -webkit-box-orient: vertical; 
+    overflow: hidden;           
+    text-overflow: ellipsis;    
+}
+.nowrap {
+    white-space: nowrap;
+}
+.text-left {
+    text-align: left !important;
+  }
+.text-center {
+    text-align: center !important;
+}
+.text-left {
+    text-align: left !important;
+}
+
+  

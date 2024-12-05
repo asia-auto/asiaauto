@@ -1,0 +1,23 @@
+{
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css",
+        "savePathReplacementPairs": null
+      }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "figma.autocompleteBlocks": true,
+    "figma.assetExportDirectory": "/images",
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "window.zoomLevel": -1,
+    "liveSassCompile.settings.includeItems": [],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "vetur.format.defaultFormatter.css": "none",
+    "json.schemas": []
+}
+  

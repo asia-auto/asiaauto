@@ -1,0 +1,22 @@
+
+// 전역 스타일 및 공통 믹스인, 변수
+@import 'base/global';
+// @import 'base/reset';
+@import 'base/mixins';
+@import 'base/variables'; 
+@import 'base/reset'; 
+@import 'base/etc';
+
+// 컴포넌트 스타일
+@import 'components/header';
+@import 'components/sidebar';
+@import 'components/button';
+@import 'components/table';
+@import 'components/pagination';
+@import 'components/input';
+@import 'components/tab';
+@import 'components/modal';
+@import 'components/list';
+@import 'components/card';
+@import 'components/typography';
+@import 'components/footer';
