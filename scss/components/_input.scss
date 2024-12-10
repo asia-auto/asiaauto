@@ -8,6 +8,101 @@
         font-size: 1.4rem;
     }
 }
+.input-type2 { 
+    input { 
+        height: 3.8rem;
+        border: 0;
+        background: var(--grayf0);
+        width: 100%;
+        padding: 1rem;
+        color: var(--gray3f);
+        &::placeholder { 
+            color: var(--gray3f);
+            font-size: 1.4rem;
+        }
+    }
+}
+.input-type3 { 
+    input { 
+        height: 4.6rem;
+        border: 1px solid var(--grayb5);
+        width: 100%;
+        padding: 1rem 1.6rem;
+        &::placeholder { 
+            color: var(--grayc8);
+            font-size: 1.4rem;
+        }
+    }
+    &.won { 
+        position: relative;
+        &::after { 
+            position: absolute;
+            top: 50%;
+            right: 1.6rem;
+            content: "원";
+            display: flex;
+            align-items: center;
+            transform: translateY(-50%);
+            color: var(--black00);
+            font-size: 1.4rem;
+        }
+        
+    }
+    input { 
+        &[type="date"] { 
+            background: url(#{$img-path}ico_calendar.svg) no-repeat top 50% right 10px;
+        }
+    }
+}
+.file-upload {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--grayb5);
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 400px;
+}
+.file-input {
+    display: none;
+}
+
+
+.file-label {
+    height: 3.8rem;
+    
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: var(--white);
+    cursor: pointer;
+    padding: 1.2rem 0 1.6rem 1.2rem;
+}
+
+.file-text {
+    color: var(--grayc8);
+    font-size: 1.4rem;
+    padding-top: 0.5rem;
+}
+
+.file-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.9rem;
+    height: 4.2rem;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: var(--grayb5);
+    padding-top: .5rem;
+}
+
+.file-button:hover {
+    background-color: #c0c0c0;
+}
+
 .check-type1 { 
     display: flex;
     align-items: center;
@@ -57,5 +152,48 @@
         padding: 1rem .6rem 1rem 1rem;
         border: 1px solid var(--grayb5);
         background: url(#{$img-path}ico_arrow_down_gray2.svg) no-repeat top 50% right 1.15rem / 1.3rem;
+        &.mw100 { 
+            min-width: 100%;
+        }
+    }
+}
+
+// 체크박스
+.chk-box  input[type="checkbox"] + label { 
+
+}
+.check-box { 
+    // display: inline-flex;
+    // display: flex;
+    // justify-content: center;
+    input[type="checkbox"] { 
+        display: none;
+        & + label { 
+            position: relative;
+            display: inline-block;
+            @include ico-20;
+            border: 1.5px solid var(--gray3f);
+            background: var(--white);
+            span { 
+                margin-left: 28px;
+                display: block;
+                min-width: 300px;
+            }
+        }
+        &:checked { 
+            & + label { 
+                position: relative;
+                &::after { 
+                    position: absolute;
+                    top: -1px;
+                    left: -1px;
+                    @include content;
+                    width: 2rem;
+                    height: 2rem;
+                    background:  url(#{$img-path}ico_checked.svg) no-repeat center center ;
+
+                }
+            }
+        }
     }
 }

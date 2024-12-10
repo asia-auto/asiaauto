@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아시아오토</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="row1">
+            <ul class="top-nav">
+                <li><a href="">부품구매</a></li>
+                <li><a href="">패밀리사이트1</a></li>
+                <li><a href="">패밀리사이트1</a></li>
+            </ul>
+            <ul class="top-select">
+                <li>
+                    <select name="" id="">
+                        <option value="">아제르바이잔</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="" id="">
+                        <option value="">한국어</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="" id="">
+                        <option value="">KRW</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="row2">
+            <h1 class="logo">
+                <a href="">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </h1>
+            <div class="search">
+                <div class="select-wrap">
+                    <select name="" id="">
+                        <option value="">검색 구분</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="차량 모델, 브랜드, 품목명 입력">
+                <button type="button">검색하기</button>
+            </div>
+            <ul class="utility">
+                <li><button class="btn-sale" type="button">차량 판매하기</button></li>
+                <li><button class="btn-icon" type="button"><img src="images/ico_cart.svg" alt=""></button></li>
+                <li><button class="btn-icon" type="button"><img src="images/ico_bell.svg" alt=""></button></li>
+                <li><button class="btn-icon" type="button"><img src="images/ico_member.svg" alt=""></button></li>
+                <li><button class="btn-icon" type="button"><img src="images/ico_board.svg" alt=""></button></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content pt47 px16">
+            <ul class="step-bar align center">
+                <li class="text fz18 fw700 active"><i>1</i>견적발송</li>
+                <li class="text fz18 fw700"><i>2</i>구매대금 결제</li>
+                <li class="text fz18 fw700"><i>3</i>배송 준비</li>
+                <li class="text fz18 fw700"><i>4</i>판매 등록 완료</li>
+            </ul>
+            <div class="borderc8 px20 py20 mt114 mxw712 mx-auto py138">
+                <div>
+                    <div class="text fz24 fw700 black00 text-center">견적 발송이 완료되었습니다</div>
+                    <p class="text fz16 gray6a text-center pt10">판매자로부터 답변이 도착하면 알림을 드릴게요</p>
+                </div>
+                <div class="align center pt60">
+                    <button class="btn line blue text fz14 fw700 blue00 mw222 h46" type="button">매물 추가 둘러보기</button>
+                    <button class="btn primary text fz14 fw700 mw222 h46 ml10" type="button">메인으로 돌아가기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // 첫 번째 전체 동의 그룹
+            const chkAll1 = document.getElementById("chkAll1");
+            const chkGroup1 = ["chk1", "chk2", "chk3", "chk4"];
+    
+            // 두 번째 전체 동의 그룹
+            const chkAll2 = document.getElementById("chkAll2");
+            const chkGroup2 = ["chk5", "chk6", "chk7", "chk8"];
+    
+            // 전체 동의 체크 이벤트 핸들러
+            chkAll1.addEventListener("change", () => {
+                chkGroup1.forEach(id => {
+                    const checkbox = document.getElementById(id);
+                    if (checkbox) {
+                        checkbox.checked = chkAll1.checked;
+                    }
+                });
+            });
+    
+            chkAll2.addEventListener("change", () => {
+                chkGroup2.forEach(id => {
+                    const checkbox = document.getElementById(id);
+                    if (checkbox) {
+                        checkbox.checked = chkAll2.checked;
+                    }
+                });
+            });
+    
+            // 개별 체크박스 상태 변경 시 전체 동의 상태 업데이트
+            chkGroup1.forEach(id => {
+                const checkbox = document.getElementById(id);
+                if (checkbox) {
+                    checkbox.addEventListener("change", () => {
+                        chkAll1.checked = chkGroup1.every(id => document.getElementById(id).checked);
+                    });
+                }
+            });
+    
+            chkGroup2.forEach(id => {
+                const checkbox = document.getElementById(id);
+                if (checkbox) {
+                    checkbox.addEventListener("change", () => {
+                        chkAll2.checked = chkGroup2.every(id => document.getElementById(id).checked);
+                    });
+                }
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>

@@ -10,8 +10,33 @@
     }
     &.primary { 
         background: var(--blue00);
-        color: var(--background-white, #FFF);
+        color: var(--white);
     }
+    &.primary2 { 
+        background: var(--orangeff);
+        color: var(--white);
+    }
+    &.line { 
+        padding: 1rem;
+        &.blue { 
+            border: 1px solid var(--blue00);
+            background: var(--white);
+        }
+        &.orange { 
+            border: 1px solid var(--orangeff);
+            background: var(--orangeffd);
+        }
+        &.gray { 
+            background: var(--white);
+            border: 1px solid var(--grayc8);
+            &.active { 
+                background: var(--orangeffd);
+                border: 1px solid var(--orangeff);
+                color: var(--orangeff);
+            }
+        }
+    }
+    
 }
 
 .btn-type1 { 

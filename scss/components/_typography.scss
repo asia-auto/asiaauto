@@ -68,6 +68,9 @@
     &.graya7 { 
         color: var(--graya7);
     }
+    &.gray3f { 
+        color: var(--gray3f);
+    }
     &.gray6a { 
         color: var(--gray6a);
     }
@@ -100,6 +103,15 @@
             @include content;
             @include ico-19;
             background: url(#{$img-path}ico_circle_gray.svg);
+        }
+    }
+    &.ico3 { 
+        display: flex;
+        gap: .4rem;
+        &::before { 
+            @include content;
+            @include ico-19;
+            background: url(#{$img-path}ico_check_green.svg);
         }
     }
 }

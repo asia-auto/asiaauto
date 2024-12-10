@@ -1,0 +1,36 @@
+.step-bar { 
+    gap: 5.1rem;
+    li { 
+        display: flex;
+        gap: 0.6rem;
+        & + li { 
+            position: relative;
+            &::before { 
+                position: absolute;
+                left: -3.3rem;
+                @include top-center;
+                @include content;
+                @include ico-15;
+                background: url(#{$img-path}ico_arrow_right_gray01.svg) no-repeat 0 0 / contain;
+            }
+        }
+        i { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include ico-24;
+            border-radius: 100%;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--gray6a);
+            background: var(--grayf0);
+        }
+        &.active { 
+            color: var(--orangeff);
+            i { 
+                color: var(--orangeff);
+                background: #FFDDD1;
+            }
+        }
+    }
+}

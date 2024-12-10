@@ -66,6 +66,21 @@
     grid-template-columns: 14rem 1fr;
     gap: 1.8rem;
 }
+.grid-type7 { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+}
+.grid-type8 { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.7rem 2rem;
+}
+.grid-type9 { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+}
 .borderc8 { 
     border: 1px solid var(--grayc8);
 }
@@ -101,8 +116,6 @@
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 }
-
-
 
 .position-center {
     @include center-absolute;
@@ -154,6 +167,9 @@
 .mw177 {
     width: 177px;
 }
+.mw222 {
+    width: 222px;
+}
 .mw360 {
     width: 360px;
 }
@@ -178,6 +194,7 @@
 .mh627 {
     min-height: 62.7rem;
 }
+.h46 { height: 4.6rem; }
 .h48 { height: 4.8rem; }
 .h470 { height: 47rem; }
 .h464 { height: 46.4rem; }
@@ -200,6 +217,10 @@
 .px20 {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+.px24 {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
 }
 .px40 {
     padding-left: 4rem;
@@ -224,6 +245,10 @@
 .py14 {
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
+}
+.py15 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 .py16 {
     padding-top: 1.6rem;
@@ -260,6 +285,10 @@
 .py60 {
     padding-top: 6rem;
     padding-bottom: 6rem; 
+}
+.py138 {
+    padding-top: 13.8rem;
+    padding-bottom: 13.8rem; 
 }
 .pt6 {
     padding-top: .6rem;
@@ -307,6 +336,9 @@
     padding-top: 3.2rem;
 }
 
+.pt36 {
+    padding-top: 3.6rem;
+}
 .pt38 {
     padding-top: 3.8rem;
 }
@@ -316,8 +348,23 @@
 .pt46 {
     padding-top: 4.6rem;
 }
+.pt47 {
+    padding-top: 4.7rem;
+}
 .pt48 {
     padding-top: 4.8rem;
+}
+.pt50 {
+    padding-top: 5rem;
+}
+.pt53 {
+    padding-top: 5.3rem;
+}
+.pt57 {
+    padding-top: 5.7rem;
+}
+.pt60 {
+    padding-top: 6rem;
 }
 .pt62 {
     padding-top: 6.2rem;
@@ -330,6 +377,9 @@
 }
 .pt80 {
     padding-top: 8rem;
+}
+.pt114 {
+    padding-top: 11.4rem;
 }
 .pt116 {
     padding-top: 11.6rem;
@@ -378,6 +428,9 @@
 }
 .pb24 {
     padding-bottom: 2.4rem;
+}
+.pb26 {
+    padding-bottom: 2.6rem;
 }
 .pb28 {
     padding-bottom: 2.8rem;
@@ -430,6 +483,9 @@
 .mxw280 {
     max-width: 28rem;
 }
+.mxw292 {
+    max-width: 29.2rem;
+}
 .mxw295 {
     max-width: 29.5rem;
 }
@@ -445,8 +501,14 @@
 .mxw443 {
     max-width: 44.3rem;
 }
+.mxw612 {
+    max-width: 61.2rem;
+}
 .mxw614 {
     max-width: 61.4rem;
+}
+.mxw712 {
+    max-width: 71.2rem;
 }
 .mxw766 {
     max-width: 76.6rem;
@@ -490,6 +552,9 @@
 .mt25 { 
     margin-top: 2.5rem;
 }
+.mt26 { 
+    margin-top: 2.6rem;
+}
 .mt30 { 
     margin-top: 3rem;
 }
@@ -519,6 +584,9 @@
 }
 .mt100 { 
     margin-top: 10rem;
+}
+.mt114 { 
+    margin-top: 11.4rem;
 }
 .mb6 { 
     margin-bottom: .6rem;
@@ -591,6 +659,9 @@
 }
 .ml40 {
     margin-left: 4rem;
+}
+.ml-30 {
+    margin-left: -3rem;
 }
 .mr8 {
     margin-right: .8rem;

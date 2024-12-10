@@ -17,6 +17,10 @@
    width: 1.4rem;
    height: 1.4rem;
 }
+@mixin ico-15 {
+   width: 1.5rem;
+   height: 1.5rem;
+}
 @mixin ico-16 {
    width: 1.6rem;
    height: 1.6rem;
@@ -28,6 +32,10 @@
 @mixin ico-19 {
    width: 1.9rem;
    height: 1.9rem;
+}
+@mixin ico-20 {
+   width: 2rem;
+   height: 2rem;
 }
 @mixin ico-24 {
    width: 2.4rem;
