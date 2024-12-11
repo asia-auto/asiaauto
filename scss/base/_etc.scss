@@ -53,11 +53,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.8rem;
+    @media screen and (width < 1300px) {
+        display: block;
+        &.none { 
+            display: grid;
+        }
+    }
 }
 .grid-type4 { 
     display: grid;
-    grid-template-columns: 61.4rem 1fr 1fr;
+    grid-template-columns: minmax(auto, 61.4rem)  1fr 1fr;
     gap: 1.8rem;
+    @media screen and (width < 1300px) {
+        display: block;
+        
+    }
 }
 .grid-type5 { 
     display: grid;
@@ -305,6 +315,9 @@
     padding-top: 13.8rem;
     padding-bottom: 13.8rem; 
 }
+.pt5 {
+    padding-top: .5rem;
+}
 .pt6 {
     padding-top: .6rem;
 }
@@ -537,6 +550,9 @@
 .mxw930 {
     max-width: 93rem;
 }
+.mxw980 {
+    max-width: 98rem;
+}
 .mxw1246 {
     max-width: 124.6rem;
 }
@@ -692,4 +708,12 @@
 }
 .mr22 {
     margin-right: 2.2rem;
+}
+
+
+@media screen and (width < 400px) {
+    html { 
+        font-size: 50%;
+    }
+
 }

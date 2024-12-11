@@ -93,7 +93,7 @@
         &::after { 
             @include content;
             @include ico-19;
-            background: url(#{$img-path}ico_check_green.svg);
+            background: url(#{$img-path}ico_check_green.svg) no-repeat 0 0 / contain;
         }
     }
     &.ico2 { 
@@ -102,7 +102,7 @@
         &::after { 
             @include content;
             @include ico-19;
-            background: url(#{$img-path}ico_circle_gray.svg);
+            background: url(#{$img-path}ico_circle_gray.svg) no-repeat 0 0 / contain;
         }
     }
     &.ico3 { 
@@ -111,7 +111,7 @@
         &::before { 
             @include content;
             @include ico-19;
-            background: url(#{$img-path}ico_check_green.svg);
+            background: url(#{$img-path}ico_check_green.svg) no-repeat 0 0 / contain;
         }
     }
 }

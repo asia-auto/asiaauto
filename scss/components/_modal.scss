@@ -1,8 +1,12 @@
 .ad-banner { 
     position: fixed;
-    top: 0;
-    right: 0;
-    max-width: 25rem;
+    top: 10rem;
+    right: 3rem;
+    max-width: 15rem;
+    z-index: 300;
+    @media screen and (width < 1300px) {
+        display: none;
+    }
     .youtube-wrap { 
         img { 
             width: 100%;
@@ -18,8 +22,8 @@
         padding: 2rem 1.6rem;
         background: var(--grayf4);
         .profile { 
-            width: 11.4rem;
-            height: 11.4rem;
+            width: 8.8rem;
+            height: 8.8rem;
             border-radius: 100%;
             background: var(--grayd9);
             margin: 0 auto;
