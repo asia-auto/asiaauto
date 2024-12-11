@@ -40,6 +40,9 @@
     display: grid;
     grid-template-columns: 31.8rem 1fr;
     gap: 1.8rem;
+    @media screen and (width < 1300px) {
+        display: block;
+    }
 }
 .grid-type2 { 
     display: grid;
@@ -119,6 +122,18 @@
 
 .position-center {
     @include center-absolute;
+}
+.fixed-top70 { 
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 7rem;
+}
+.fixed-bottom0 { 
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 .relative {
@@ -387,6 +402,9 @@
 .pt120 {
     padding-top: 12rem;
 }
+.pt123 {
+    padding-top: 12.3rem;
+}
 .pt134 {
     padding-top: 13.4rem;
 }
@@ -470,6 +488,9 @@
 }
 .pr20 { 
     padding-right: 2rem;
+}
+.pr40 { 
+    padding-right: 4rem;
 }
 .mx-auto {
     margin: 0 auto;
@@ -656,6 +677,9 @@
 }
 .ml23 {
     margin-left: 2.3rem;
+}
+.ml30 {
+    margin-left: 3rem;
 }
 .ml40 {
     margin-left: 4rem;

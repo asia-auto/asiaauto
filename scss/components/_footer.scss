@@ -11,6 +11,7 @@
                 align-items: center;
                 gap: 2.8rem;
                 height: 4.8rem;
+                min-width: 600px;
                 li { 
                     & + li { 
                         position: relative;
@@ -51,6 +52,17 @@
                     }
                 }
             }
+            @media screen and (width < 1300px) {
+                &.align { 
+                    display: block;
+                }
+                >div { 
+                    &:nth-child(2) { 
+                        padding-top: 2rem;
+                    }
+                }
+            }
+            
         }
         .row3 { 
             ul { 
@@ -59,6 +71,7 @@
                 align-items: center;
                 height: 4.8rem;
                 gap: 2.5rem;
+                min-width: 1300px;
                 li { 
                     color: var(--background-gray, #F4F4F4);
                     font-size: 1.4rem;
