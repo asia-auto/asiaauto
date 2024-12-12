@@ -49,10 +49,18 @@
 .card-type1 { 
     width: 100%;
     min-height: 10.9rem;
+    @media screen and (width < 500px) {
+        display: block;
+        .info { 
+            margin-left: 0;
+            padding-top: 1rem;
+        }
+    }
     .img-wrap { 
         width: 9.8rem;
         img { 
             width: 100%;
+            min-width: 9.8rem;
         }
     }
     .info { 
@@ -85,5 +93,31 @@
             justify-content: space-between;
         }
 
+    }
+}
+.card-type3 { 
+    button { 
+        padding: 1rem ;
+        min-width: 21.8rem;
+        height: 4.6rem;
+    }
+    input { 
+        width: 100%;
+        max-width: 67.5rem;
+        padding: 2.4rem 1.4rem;
+        background: var(--white);
+        color: var(--black24);
+        font-size: 3.6rem;
+        border: 0;
+        border-bottom: 2px solid var(--grayb5);
+        @media screen and (width < 1300px) {
+            font-size: 1.6rem;
+        }
+        &::placeholder { 
+            color: var(--grayc8);
+        }
+        &:focus { 
+            outline: 0;
+        }
     }
 }

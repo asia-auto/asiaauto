@@ -61,9 +61,13 @@
     border-radius: 4px;
     overflow: hidden;
     max-width: 400px;
+    @media screen and (width < 1300px) {
+        min-width: 100%;   
+    }
 }
 .file-input {
     display: none;
+
 }
 
 

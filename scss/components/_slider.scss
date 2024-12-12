@@ -1,13 +1,16 @@
 .slider02-wrap { 
     @media screen and (width < 1300px) {
-    
         height: 50vw;
+    }
+    @media screen and (width < 900px) {
+        height: 60vw;
     }
 }
 
 .slider02 { 
     position: relative;
     li { 
+        width: 100%;
         position: absolute;
         top: 0;
         left: 0;

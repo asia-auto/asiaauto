@@ -1,5 +1,14 @@
+
+a.link { 
+    text-decoration: underline;
+}
 .block {
     display: block;
+}
+.block-mo {
+    @media screen and (width < 1300px) {
+        display: block;
+    }
 }
 .inline {
     display: inline-block;
@@ -59,6 +68,11 @@
             display: grid;
         }
     }
+    @media screen and (width < 500px) {
+        &.none { 
+            display: block;
+        }
+    }
 }
 .grid-type4 { 
     display: grid;
@@ -83,16 +97,34 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.8rem;
+    @media screen and (width < 1300px) {
+        display: block;
+    }
 }
 .grid-type8 { 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.7rem 2rem;
+    @media screen and (width < 1300px) {
+        display: block;
+    }
 }
 .grid-type9 { 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.8rem;
+    @media screen and (width < 1300px) {
+        display: block;
+    }
+}
+.grid-type10 { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100vh - 10.6rem);
+    @media screen and (width < 1300px) {
+        display: block;
+        
+    }
 }
 .borderc8 { 
     border: 1px solid var(--grayc8);
@@ -114,6 +146,15 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.ellipsis01-mo { 
+    @media screen and (width < 1300px) {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
 }
 .ellipsis02 { 
     overflow: hidden;
@@ -188,6 +229,9 @@
 }
 .w100 {
     width: 100% !important;
+}
+.h100vh { 
+    height: 100vh;
 }
 .mw177 {
     width: 177px;
@@ -342,6 +386,7 @@
 .pt20 {
     padding-top: 2rem;
 }
+
 .pt22 {
     padding-top: 2.2rem;
 }
@@ -405,6 +450,12 @@
 }
 .pt80 {
     padding-top: 8rem;
+}
+.pt95 {
+    padding-top: 9.5rem;
+}
+.pt106 {
+    padding-top: 10.6rem;
 }
 .pt114 {
     padding-top: 11.4rem;
@@ -481,6 +532,9 @@
 .pb48 {
     padding-bottom: 4.8rem;
 }
+.pb95 {
+    padding-bottom: 9.5rem;
+}
 .pb248 {
     padding-bottom: 24.8rem;
 }
@@ -499,12 +553,19 @@
 .pl200 {
     padding-left: 20rem;
 }
+.pl336 {
+    padding-left: 33.6rem;
+}
 .pr20 { 
     padding-right: 2rem;
 }
 .pr40 { 
     padding-right: 4rem;
 }
+
+
+
+
 .mx-auto {
     margin: 0 auto;
 }
@@ -533,6 +594,9 @@
     max-width: 43.6rem;
 }
 .mxw443 {
+    max-width: 44.3rem;
+}
+.mxw454 {
     max-width: 44.3rem;
 }
 .mxw612 {
@@ -658,9 +722,13 @@
 .mb40 { 
     margin-bottom: 4rem;
 }
+.mb114 { 
+    margin-bottom: 11.4rem;
+}
 .mb-14 {
     margin-bottom: -1.4rem;
 }
+
 .ml4 {
     margin-left: .4rem;
 }
@@ -703,6 +771,7 @@
 .ml-30 {
     margin-left: -3rem;
 }
+
 .mr8 {
     margin-right: .8rem;
 }
@@ -710,10 +779,55 @@
     margin-right: 2.2rem;
 }
 
+.pt0-mo {
+    @media screen and (width < 1300px) {
+        padding-top: 0rem;
+    }
+}
+.pt10-mo {
+    @media screen and (width < 1300px) {
+        padding-top: 1rem;
+    }
+}
+.pt20-mo {
+    @media screen and (width < 1300px) {
+        padding-top: 2rem;
+    }
+}
+.pt40-mo {
+    @media screen and (width < 1300px) {
+        padding-top: 4rem;
+    }
+}
+.pt50-mo {
+    @media screen and (width < 1300px) {
+        padding-top: 5rem;
+    }
+}
+.pt64-mo {
+    @media screen and (width < 1300px) {
+        padding-top: 6.4rem;
+    }
+}
+.pb40-mo {
+    @media screen and (width < 1300px) {
+        padding-bottom: 4rem;
+    }
+}
+.mt10-mo {
+    @media screen and (width < 1300px) {
+        margin-top: 1rem;
+    }
+}
+.ml0-mo { 
+    @media screen and (width < 1300px) {
+        margin-left: 0;
+    }
+}
 
-@media screen and (width < 400px) {
+
+@media screen and (width < 500px) {
     html { 
         font-size: 50%;
     }
-
 }

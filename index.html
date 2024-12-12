@@ -471,7 +471,7 @@
         </div>
     </header>
     <div class="main">
-        <section class="section px20 pt20 pb48 border-bottomf0" id="section1">
+        <section class="section px20 pb48 border-bottomf0" id="section1">
             <div class="inner">
                 <div class="grid-type1">
                     <div class="introduction">
@@ -1333,6 +1333,27 @@ $(document).ready(function() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const mainButtons = document.querySelectorAll('.btn-main');
+
+    mainButtons.forEach(button => {
+        const subMenu = button.nextElementSibling; // 바로 다음에 있는 sub-menu 선택
+
+        // btn-main에 마우스 올릴 때 sub-menu 표시
+        button.addEventListener('mouseenter', () => {
+            if (subMenu) {
+                subMenu.style.display = 'block'; // sub-menu 보이기
+            }
+        });
+
+        // 메뉴 영역에서 마우스가 벗어날 때 sub-menu 숨기기
+        button.parentElement.addEventListener('mouseleave', () => {
+            if (subMenu) {
+                subMenu.style.display = 'none'; // sub-menu 숨기기
+            }
+        });
     });
 });
 

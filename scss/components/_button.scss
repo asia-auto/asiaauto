@@ -38,38 +38,6 @@
     }
     
 }
-
-.btn-type1 { 
-    display: flex;
-    align-items: center;
-    gap: .8rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 8.6rem;
-    background: white;
-    width: 31.8rem;
-    padding-left: 2rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05); /* 위쪽에만 그림자 */
-    padding-right: 2.4rem;
-    .btn-reset { 
-        border: 1px solid var(--grayc8);
-        padding: 1rem;
-        color: var(--gray6a);
-        font-size: 1.4rem;
-        font-weight: 700;
-        width: 8rem;
-    }
-    .btn-filtering { 
-        width: 100%;
-        background: var(--main-darkblue, #051277);
-        padding: 1rem;
-        color: var(--background-white, #FFF);
-        font-size: 1.4rem;
-        font-weight: 700;
-
-    }
-}
 .label-wrap { 
     display: flex;
     gap: 1.2rem;
