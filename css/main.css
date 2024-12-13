@@ -942,7 +942,7 @@ a.link {
 }
 
 .pt114 {
-  padding-top: 11.4rem;
+  padding-top: 14.4rem;
 }
 
 .pt116 {
@@ -1500,6 +1500,10 @@ a.link {
   font-size: 1.6rem;
   font-weight: 700;
 }
+.header .row2 .main-menu > ul > li > a.active {
+  background: var(--blue00);
+  color: white;
+}
 .header .row2 .main-menu > ul > li:hover a {
   background: var(--blue00);
   color: white;
@@ -1524,7 +1528,7 @@ a.link {
   color: var(--navy05);
   font-size: 1.4rem;
   text-align: center;
-  line-height: 100%; /* 1.4rem */
+  line-height: 100%;
   border-bottom: 1px solid var(--grayc8);
 }
 .header .row2 .main-menu > ul > li .sub-menu li a:hover {
@@ -2305,6 +2309,20 @@ a.link {
   background: url(/images/ico_tri.svg) no-repeat 0 0/contain;
 }
 
+.btn-type2 {
+  background: var(--white);
+  border: 1px solid var(--grayc8);
+  color: var(--gray6a);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.btn-type2.active {
+  border: 1px solid var(--orangeff);
+  background: var(--orangeffd);
+  color: var(--orangeff);
+}
+
 .input-type1 {
   height: 3.2rem;
   border: 1px solid var(--grayb5);
@@ -2574,6 +2592,7 @@ a.link {
 }
 .list-type1 li {
   position: relative;
+  cursor: pointer;
 }
 .list-type1 li img {
   display: block;
@@ -2836,6 +2855,16 @@ a.link {
 }
 .card-type3 input:focus {
   outline: 0;
+}
+
+.certificate {
+  background: #D9D9D9;
+}
+.certificate img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .text.fz12 {
@@ -3214,6 +3243,8 @@ label {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
   padding-top: 2rem;
   transition: all 0.3s;
+  height: calc(100vh - 115px);
+  overflow: hidden;
 }
 .filter-wrap.active {
   width: 5rem;
@@ -3226,7 +3257,7 @@ label {
 .filter-wrap .inner {
   visibility: visible;
   opacity: 1;
-  height: 90vh;
+  height: 83vh;
   padding-bottom: 12.6rem;
   transition: opacity 1s;
 }

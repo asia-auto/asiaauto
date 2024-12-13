@@ -71,11 +71,16 @@
                         color: var(--navy05);
                         font-size: 1.6rem;
                         font-weight: 700;
+                        &.active { 
+                            background: var(--blue00);
+                            color: white; 
+                        }
                     }
                     &:hover { 
                         a { 
                             background: var(--blue00);
                             color: white;
+
                         }
                     }
                     .sub-menu { 
@@ -98,7 +103,7 @@
                                 color: var(--navy05);
                                 font-size: 1.4rem;
                                 text-align: center;
-                                line-height: 100%; /* 1.4rem */
+                                line-height: 100%; 
                                 border-bottom: 1px solid var(--grayc8);
                                 &:hover { 
                                     background: var(--grayf0);

@@ -19,6 +19,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
     padding-top: 2rem;
     transition: all .3s;
+    height: calc(100vh - 115px);
+    overflow: hidden;
     
     &.active { 
         width: 5rem;
@@ -31,7 +33,7 @@
     .inner { 
         visibility: visible;
         opacity: 1;
-        height: 90vh;
+        height: 83vh;
         padding-bottom: 12.6rem;
         transition: opacity 1s;
     }
