@@ -98,7 +98,7 @@
         <div class="header-mobile">
             <div class="align both vm">
                 <a class="btn-hamburger" href="#none"><img src="images/ico_hamburger.svg" alt=""></a>
-                <h1><a href=""><img src="images/logo.svg" alt=""></a></h1>
+                <h1><a href="index.html"><img src="images/logo.svg" alt=""></a></h1>
                 <ul class="utility">
                     <li><button class="btn-icon" type="button"><img src="images/ico_bell.svg" alt=""></button></li>
                     <li><button class="btn-icon" type="button"><img src="images/ico_member.svg" alt=""></button></li>
@@ -330,46 +330,26 @@
         document.addEventListener('DOMContentLoaded', () => {
     const mainButtons = document.querySelectorAll('.btn-main');
 
-    mainButtons.forEach(button => {
-        const subMenu = button.nextElementSibling; // 바로 다음에 있는 sub-menu 선택
+    // mainButtons.forEach(button => {
+    //     const subMenu = button.nextElementSibling; // 바로 다음에 있는 sub-menu 선택
 
-        // btn-main에 마우스 올릴 때 sub-menu 표시
-        button.addEventListener('mouseenter', () => {
-            if (subMenu) {
-                subMenu.style.display = 'block'; // sub-menu 보이기
-            }
-        });
+    //     // btn-main에 마우스 올릴 때 sub-menu 표시
+    //     button.addEventListener('mouseenter', () => {
+    //         if (subMenu) {
+    //             subMenu.style.display = 'block'; // sub-menu 보이기
+    //         }
+    //     });
 
-        // 메뉴 영역에서 마우스가 벗어날 때 sub-menu 숨기기
-        button.parentElement.addEventListener('mouseleave', () => {
-            if (subMenu) {
-                subMenu.style.display = 'none'; // sub-menu 숨기기
-            }
-        });
-    });
+    //     // 메뉴 영역에서 마우스가 벗어날 때 sub-menu 숨기기
+    //     button.parentElement.addEventListener('mouseleave', () => {
+    //         if (subMenu) {
+    //             subMenu.style.display = 'none'; // sub-menu 숨기기
+    //         }
+    //     });
+    // });
 });        
 
     </script>
-        <style>
-            .step-bar { 
-                li { 
-                    & + li { 
-                        &::before { 
-                            display: none;
-                        }
-                    }
-                    &:nth-child(1) { 
-                        display: none;
-                    }
-                    &:nth-child(2) { 
-                        display: none;
-                    }
-                    &:nth-child(3) { 
-                        display: none;
-                    }
-                }
-            }
-        </style>
     
 </body>
 </html>
