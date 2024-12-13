@@ -30,8 +30,8 @@
 }
 #section1 { 
     @media screen and (width < 1300px) {
-        &.pt20 { 
-            padding-top: 40px;
+        &.pt-mo { 
+            padding-top: 5rem;
         }
     }
 }

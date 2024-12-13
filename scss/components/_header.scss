@@ -288,6 +288,10 @@
             height: 359.57px; 
             margin-top: -1.5rem;
             object-fit: cover;
+            @media screen and (width < 1300px) {
+                height: 423.57px; 
+            }
+
         }
     }
     .banner { 
