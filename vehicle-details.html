@@ -87,7 +87,7 @@
                         </select>
                     </div>
                     <input type="text" placeholder="차량 모델, 브랜드, 품목명 입력">
-                    <button type="button">검색하기</button>
+                    <button type="button" onclick="location.href='property-inquiry.html'">검색하기</button>
                 </div>
                 <ul class="utility ml30">
                     <li><button class="btn-icon" type="button"><img src="images/ico_bell.svg" alt=""></button></li>
@@ -192,7 +192,7 @@
             </div>
         </div>
     </header>
-    <div class="main">
+    <div class="main pt20">
         <div class="content mxw980 mx-auto pt116 px16" style="position: relative;">
             <div >
                
@@ -796,23 +796,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mainButtons = document.querySelectorAll('.btn-main');
 
-    mainButtons.forEach(button => {
-        const subMenu = button.nextElementSibling; // 바로 다음에 있는 sub-menu 선택
+    // mainButtons.forEach(button => {
+    //     const subMenu = button.nextElementSibling; // 바로 다음에 있는 sub-menu 선택
 
-        // btn-main에 마우스 올릴 때 sub-menu 표시
-        button.addEventListener('mouseenter', () => {
-            if (subMenu) {
-                subMenu.style.display = 'block'; // sub-menu 보이기
-            }
-        });
+    //     // btn-main에 마우스 올릴 때 sub-menu 표시
+    //     button.addEventListener('mouseenter', () => {
+    //         if (subMenu) {
+    //             subMenu.style.display = 'block'; // sub-menu 보이기
+    //         }
+    //     });
 
-        // 메뉴 영역에서 마우스가 벗어날 때 sub-menu 숨기기
-        button.parentElement.addEventListener('mouseleave', () => {
-            if (subMenu) {
-                subMenu.style.display = 'none'; // sub-menu 숨기기
-            }
-        });
-    });
+    //     // 메뉴 영역에서 마우스가 벗어날 때 sub-menu 숨기기
+    //     button.parentElement.addEventListener('mouseleave', () => {
+    //         if (subMenu) {
+    //             subMenu.style.display = 'none'; // sub-menu 숨기기
+    //         }
+    //     });
+    // });
 });
 
 </script>
